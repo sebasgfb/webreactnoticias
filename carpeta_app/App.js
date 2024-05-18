@@ -4,7 +4,7 @@ import ListaPost from './src/ListaPost';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
-function PantallaInicio({navigation}){
+function PantallaInicioPrueba({navigation}){
   return(
     <View style = {styles.container}>
       <Image resizeMode = 'contain' style = {styles.formatoimagen} source={{uri: 'https://img.freepik.com/vector-gratis/arbol-aislado-sobre-fondo-blanco_1308-26130.jpg'}}></Image>
@@ -22,6 +22,16 @@ function PantallaInicio({navigation}){
         }}>
         <Text style={styles.textoboton}>Ir a Pantalla 3</Text>
       </Pressable>
+    </View>
+  );
+}
+
+function PantallaInicio({navigation}){
+  return(
+    <View style = {styles.container}>
+      <Image resizeMode = 'contain' style = {styles.formatoimagen} source={{uri: 'https://img.freepik.com/vector-gratis/arbol-aislado-sobre-fondo-blanco_1308-26130.jpg'}}></Image>
+      <Text style = {styles.titulo} >Bienvenido al Blogreact</Text>
+      <ListaPost/>
     </View>
   );
 }
